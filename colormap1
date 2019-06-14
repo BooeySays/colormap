@@ -1,0 +1,40 @@
+#!/bin/bash
+
+
+xxx=0
+echo -e "\n\nＢａｓｉｃ ｃｏｌｏｒｓ：\n"
+echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -e "BOLD / BRIGHT"
+echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m"$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m"$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m"$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m"$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m"$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -en "[38;5;256m"$xxx":[48;5;"$xxx"m       [m "
+((xxx +=1))
+echo -e "NORMAL"
+
