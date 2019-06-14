@@ -1,0 +1,6 @@
+v1.1	(190613)
+  -	Changed from script to functions
+  - Seperated Basic colors from shades of grey, from the rest
+
+v1.0
+  -	colormap created
