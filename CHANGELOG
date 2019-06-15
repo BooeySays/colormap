@@ -1,3 +1,12 @@
+TO DO 
+		* make install file
+		* Make the palettes smaller
+		* Make a condition to figure out which palette to display, depending on the screen size
+		* Work on menu --- v1.1.2
+
+
+	
+
 v1.1.1	[061419]
   -	Enclosed color blocks in colormap1 script, in brackets ('[' and ']')
   -	Fixed the names Bold and Normal in colormap1 so the right names are
