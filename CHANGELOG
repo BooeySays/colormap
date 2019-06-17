@@ -4,15 +4,9 @@ TO DO
 		* Make a condition to figure out which palette to display, depending on the screen size
 		* Work on menu --- v1.1.2
 
+v1.0
+  -	colormap created
 
-	
-
-v1.1.1	[061419]
-  -	Enclosed color blocks in colormap1 script, in brackets ('[' and ']')
-  -	Fixed the names Bold and Normal in colormap1 so the right names are
-	used for the right color palette.
-  - Started working on a script for colormap
-	
 v1.1	(190613)
   -	Changed from script to functions
 	  - colormap1 shows bsaic
@@ -20,5 +14,10 @@ v1.1	(190613)
 	  -	colormap3 shows greys
   - Seperated Basic colors from shades of grey, from the rest
 
-v1.0
-  -	colormap created
+
+v1.1.1	[061419]
+  -	Enclosed color blocks in colormap1 script, in brackets ('[' and ']')
+  -	Fixed the names Bold and Normal in colormap1 so the right names are
+	used for the right color palette.
+  - Started working on a script for colormap
+	
