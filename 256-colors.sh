@@ -18,4 +18,4 @@ for fgbg in 38 48 ; do # Foreground / Background
     echo # New line
 done
 
-exit 0
+#exit 0

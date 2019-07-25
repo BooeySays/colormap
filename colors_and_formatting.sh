@@ -19,4 +19,4 @@ for clbg in {40..47} {100..107} 49 ; do
 	done
 done
 
-exit 0
+#exit 0
