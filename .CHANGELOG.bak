@@ -1,0 +1,24 @@
+
+v1.2	190724
+  -	Added a few new functions in colormap
+  -	Got rid of all the other scripts
+  -	"__cmap" now shows all the colors, 1, 2, 3
+	  -	If the grey shade table is too wide for the
+		terminals screen, it will show the verticle
+		table instead.
+  - "__cmap" and the colormap script is still pretty
+	messy.
+		- [TODO1] Still need to clean up the file
+  - "__cmap" only shows colors with the assumption
+	that the terminal is white on black.
+		- [TODO2] Want to make two versions, another one that
+		  displays on a white background so you can see
+		  how it affects the colors.  
+
+
+v1.1	(190613)
+  -	Changed from script to functions
+  - Seperated Basic colors from shades of grey, from the rest
+
+v1.0
+  -	colormap created
