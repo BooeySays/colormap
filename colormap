@@ -1,48 +1,46 @@
 #!/bin/bash
 
-#echo -e "[38;5;0m[48;5;15m  "$xxx"  [m	"
-#((xxx +=1))
-
+__version__='2.0'
 
 function __cmap1()
 {
 	xxx=0
-	echo -e "\n\nＢａｓｉｃ ｃｏｌｏｒｓ：\n"
+	echo -e "[01m\n\nＢａｓｉｃ ｃｏｌｏｒｓ：\n[m"
 #	while [ "$xxx" -lt 17 ]; do
 #		while [ "$xxx" -lt 8 ]; do
-			echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
 			echo -e "BOLD / BRIGHT"
 #		done
-			echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m"$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m"$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m"$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m"$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m"$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m"$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m"$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m"$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m"$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m"$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
-			echo -en "[38;5;256m"$xxx":[48;5;"$xxx"m       [m "
+			echo -en "[m"$xxx":[38;5;"$xxx"m▆▆▆▆▆▆▆[m "
 			((xxx +=1))
 			echo -e "NORMAL"
 #			echo -e """
@@ -54,59 +52,37 @@ function __cmap1()
 #	done
 }
 
-function __cmap1a()
-{
-	xxx=0
-	echo -e "\n\nＢａｓｉｃ ｃｏｌｏｒｓ：\n"
-	while [ "$xxx" -lt 17 ]; do
-		while [ "$xxx" -lt 10 ]; do
-			while [ "$xxx" -lt 8 ]; do
-				echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
-				((xxx +=1))
-			done
-			echo -e "BOLD / BRIGHT"
-			echo -en "[38;5;256m "$xxx":[48;5;"$xxx"m       [m "
-			((xxx +=1))
-		done
-		echo -en "[38;5;256m"$xxx":[48;5;"$xxx"m       [m "
-		((xxx +=1))
-	done
-	echo -e "NORMAL"
-}
-
-
-#echo
 
 function __cmap2()
 {
-echo -e "\n\nＥｘｔｒａ ｃｏｌｏｒｓ ：\n"
+echo -e "\n\n[01mＥｘｔｒａ ｃｏｌｏｒｓ ：[m\n"
 xxx=16
 while [ $xxx -lt 231 ]; do
 	while [ $xxx -lt 100 ]; do
-		echo -en "[38;5;256m "$xxx": [48;5;"$xxx"m      [m  "
+		echo -en "[01m "$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
 		((xxx +=1))
-		echo -en "[38;5;256m "$xxx": [48;5;"$xxx"m      [m  "
+		echo -en "[01m "$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
 		((xxx +=1))
-		echo -en "[38;5;256m "$xxx": [48;5;"$xxx"m      [m  "
+		echo -en "[01m "$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
 		((xxx +=1))
-		echo -en "[38;5;256m "$xxx": [48;5;"$xxx"m      [m  "
+		echo -en "[01m "$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
 		((xxx +=1))
-		echo -en "[38;5;256m "$xxx": [48;5;"$xxx"m      [m  "
+		echo -en "[01m "$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
 		((xxx +=1))
-		echo -e "[38;5;256m "$xxx": [48;5;"$xxx"m      [m  "
+		echo -e "[01m "$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
 		((xxx +=1))
 	done
-	echo -en "[38;5;256m"$xxx": [48;5;"$xxx"m      [m  "
+	echo -en "[01m"$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
 	((xxx +=1))
-	echo -en "[38;5;256m"$xxx": [48;5;"$xxx"m      [m  "
+	echo -en "[01m"$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
 	((xxx +=1))
-	echo -en "[38;5;256m"$xxx": [48;5;"$xxx"m      [m  "
+	echo -en "[01m"$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
 	((xxx +=1))
-	echo -en "[38;5;256m"$xxx": [48;5;"$xxx"m      [m  "
+	echo -en "[01m"$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
 	((xxx +=1))
-	echo -en "[38;5;256m"$xxx": [48;5;"$xxx"m      [m  "
+	echo -en "[01m"$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
 	((xxx +=1))
-	echo -e "[38;5;256m"$xxx": [48;5;"$xxx"m      [m  "
+	echo -e "[01m"$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
 	((xxx +=1))
 done
 }
@@ -119,7 +95,6 @@ while [ $xxx -lt 256 ]; do
 		echo -e "[38;5;15m "$xxx"   [48;5;"$xxx"m     [m  "
 		((xxx +=1))
 done
-
 }
 
 function __cmap3h(){
@@ -135,20 +110,24 @@ if [ $COLUMNS -gt 95 ]; then
 	echo -e "\n\n"
 fi
 }
-#
-#xxx=232
-#
-#while [ $xxx -lt 256 ]; do
-#		echo -e "[38;5;15m "$xxx"   [48;5;"$xxx"m     [m  "
-#		((xxx +=1))
-#done
-#}
 
-function __cmap(){
+function __cmapall(){
 	__cmap1
 	__cmap2
+    if [ "$COLUMNS" -gt '97' ]; then
+        __cmap3h
+    else
+        __cmap3v
+    fi
+    #echo -e ""
+    figlet -f term -c -w 77 " ------ END OF FILE ------ "
+    echo -e "\n\n"
+
 }
 
+function cmap(){
+    __cmapall | less -r -P 'Space to advance a screen' -e
+}
 
 function __new_colors(){
 	x=196

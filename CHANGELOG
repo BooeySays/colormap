@@ -1,6 +1,33 @@
+v2.0	2019-07-29 
+  -	Added __cmapall() which calls all three funcs
+  -	Checks if screen is wide enough to display cmap3h, and if it isnt, displays
+  	cmap3v instead
+  -	function cmap() added
+  		- calls __cmapall(), piped into 'less -r -e'
+  - Changed colors of text displayed to the terminals default FG color
+  -	Added spacing between each color blocks by using smaller blocks to give
+  	a seperation between lines (detailed below)
+  - All color blocks has been changed from colored backgrounds, to colored fg
+  	blocks 
+  		- using the color code to color fg instead of bg and creating blocks
+		  by creating strings of blank spaces.
+		- blocks now consist of a string of '▆'
+
+							      END
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺		 		
+
 v1.1	(190613)
   -	Changed from script to functions
   - Seperated Basic colors from shades of grey, from the rest
 
+							      END
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺		 		
+
+
 v1.0
   -	colormap created
+
+							      END
+⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺⎺		 		
+
+
