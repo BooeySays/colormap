@@ -1,6 +1,7 @@
 #!/bin/bash
 
 TESTNUM=0
+echo -en "\033[01mＴｅｘｔ  ｆｏｒｍａｔｔｉｎｇ  ｔｅｓｔ：\033[m\n"
 for TEXT in {"Reguar","Bold","Dim","Italics","Underlkne","Blink","Not Used","Reversed","Hidden","Strike Thru"}; do
 	echo -en "\n "$TEXT":\r\033[18C"
 	for TEST in "$TESTNUM"; do
@@ -9,3 +10,4 @@ for TEXT in {"Reguar","Bold","Dim","Italics","Underlkne","Blink","Not Used","Rev
 	done
 done
 echo -e "\n\n"
+
