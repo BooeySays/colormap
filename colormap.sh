@@ -1,6 +1,26 @@
 #!/bin/bash
 
-__version__='2.3'
+__version__='2.2'
+
+#function cmap0(){
+#	FORMATCOLOR="\033[38;5;$(($RANDOM%231))m"
+#	echo -en "\n\n\033[01mＴｅｘｔ  ｆｏｒｍａｔｔｉｎｇ  ｔｅｓｔ：\033[m\n\n"
+#	echo -en "Random color used for this test: [\033[07m"$FORMATCOLOR"     \033[m]\n\n"
+#	echo -en """
+#	[ \033[00m"$FORMATCOLOR"TEST\033[m ] Regular
+#	[ \033[01m"$FORMATCOLOR"TEST\033[m ] Bold
+#	[ \033[02m"$FORMATCOLOR"TEST\033[m ] Dim
+#	[ \033[03m"$FORMATCOLOR"TEST\033[m ] Italics
+#	[ \033[04m"$FORMATCOLOR"TEST\033[m ] Underline
+#	[ \033[05m"$FORMATCOLOR"TEST\033[m ] Blink
+#	[ \033[07m"$FORMATCOLOR"TEST\033[m ] Reversed
+#	[ \033[08m"$FORMATCOLOR"TEST\033[m ] Hidden
+#	[ \033[09m"$FORMATCOLOR"TEST\033[m ] Strike-Thru
+#	[ \033[21m"$FORMATCOLOR"TEST\033[m ] Double Underline
+#	[ \033[53m"$FORMATCOLOR"TEST\033[m ] Overline
+#
+#"""
+#}
 
 function cmap0(){
 	TESTNUM=0
@@ -132,7 +152,7 @@ echo
 }
 
 
-function cmap2()
+function _cmap2()
 {
 echo -e "\n\n[01mＥｘｔｒａ ｃｏｌｏｒｓ ：[m\n"
 xxx=16
@@ -164,6 +184,10 @@ while [ $xxx -lt 231 ]; do
 	echo -e "[01m"$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
 	((xxx +=1))
 done
+}
+
+function cmap2(){
+	_cmap2 | less -r;
 }
 
 function cmap3(){
@@ -201,12 +225,27 @@ function __cmapall(){
 	cmap0;
 #	unset FORMATCOLOR
 	cmap1;
-	cmap2;
+	_cmap2;
     cmap3;
     #echo -e ""
     figlet -f term -c -w 77 " ------ END OF FILE ------ "
     echo -e "\n\n"
+}
 
+function __cmapalla(){
+	clear;
+	cmap0;
+	read;
+	clear;
+	cmap1;
+	read;
+	clear;
+	_cmap2 | less -r;
+	read;
+	clear;
+    cmap3;
+    figlet -f term -c -w 77 " ------ END OF FILE ------ ";
+    echo -e "\n\n";
 }
 
 function cmap(){
@@ -226,29 +265,3 @@ function shades_grey(){
 		((g +=1))
 	done
 }
-
-#CHANGELOG
-# v2.3 - 190822
-#  - Changed cmap1 to include the color bars on white and black bg
-#
-# v2.2 - 190821
-#
-# testformatting() / cmap0:
-#  -	Edited textformatting to show the TEST bar first, followed by
-#	the format desc
-#		 -	Added colors for the test bar
-# -	renamed to cmap0()
-#
-# __cmap1():
-# -	renamed to cmap1()
-#
-# __cmap2():
-# -	renamed to cmap2()
-#
-# __cmap3h() / __cmap3v():
-# -	combined both into one function called cmap3
-#
-# v2.1
-#
-# -	added testformatting() to display a text using all the different
-#	formatting options, to see which ones work and which doesn't
