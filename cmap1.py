@@ -30,54 +30,48 @@ def __cmap1():
 		xxx = int(int(xxx) + 1)
 	print('')
 	print("\033[00;01mBold\033[m\n")
-#
-#			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -e "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-##			echo -e print("BOLD / BRIGHT"
-##		done
-#	echo -en "\033[01mBold:\033[m"
-#			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -en "[m"$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -en "[m"$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -en "[m"$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -en "[m"$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -en "[m"$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-#			echo -en "[m"$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-#			((xxx +=1))
-##echo -e "\n\033[m\033[01m[BOLD]\033[m"
-#
-#echo
-##			figlet -c -w 62 -f term '[REGULAR]'
-##			echo -e "NORMAL"
-##			echo -e """
-##NOTE:
-##0 - 7  are the same as 30 - 37 WITHOUT bold
-##8 - 15 are the same colors are 30-37, when used with 01 (BOLD)
-#
-##"""
-##	done
+
+def __cmap2():
+	print("\n\n[01mＥｘｔｒａ ｃｏｌｏｒｓ ：[m\n")
+	xxx=16
+	while xxx < 231:
+		while xxx < 100:
+			print("[01m " + str(xxx) + "[m:[00;38;5;" + str(xxx) + "m▆▆▆▆▆▆[m  ", end='')
+			xxx = int(int(xxx) + 1)
+			print("[01m " + str(xxx) + "[m:[00;38;5;" + str(xxx) + "m▆▆▆▆▆▆[m  ", end='')
+			xxx = int(int(xxx) + 1)
+			print("[01m " + str(xxx) + "[m:[00;38;5;" + str(xxx) + "m▆▆▆▆▆▆[m  ", end='')
+			xxx = int(int(xxx) + 1)
+			print("[01m " + str(xxx) + "[m:[00;38;5;" + str(xxx) + "m▆▆▆▆▆▆[m  ", end='')
+			xxx = int(int(xxx) + 1)
+			print("[01m " + str(xxx) + "[m:[00;38;5;" + str(xxx) + "m▆▆▆▆▆▆[m  ", end='')
+			xxx = int(int(xxx) + 1)
+			print("[01m " + str(xxx) + "[m:[00;38;5;" + str(xxx) + "m▆▆▆▆▆▆[m  ")
+			xxx = int(int(xxx) + 1)
+#		echo -en "[01m "$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
+#		((xxx +=1))
+#		echo -en "[01m "$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
+#		((xxx +=1))
+#		echo -en "[01m "$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
+#		((xxx +=1))
+#		echo -en "[01m "$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
+#		((xxx +=1))
+#		echo -e "[01m "$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
+#		((xxx +=1))
+#	done
+#	echo -en "[01m"$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
+#	((xxx +=1))
+#	echo -en "[01m"$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
+#	((xxx +=1))
+#	echo -en "[01m"$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
+#	((xxx +=1))
+#	echo -en "[01m"$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
+#	((xxx +=1))
+#	echo -en "[01m"$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
+#	((xxx +=1))
+#	echo -e "[01m"$xxx"[m:[00;38;5;"$xxx"m▆▆▆▆▆▆[m  "
+#	((xxx +=1))
+#done
 #}
-#
-__cmap1()
+
+__cmap2()
