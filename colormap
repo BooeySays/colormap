@@ -170,4 +170,5 @@ function shades_grey(){
 	done
 }
 
-
+cmap
+unset -f testformatting shades_grey __cmapall __cmap1 __cmap2 __cmap3h __cmap3v cmap
