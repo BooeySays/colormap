@@ -6,7 +6,7 @@ if len(sys.argv) == 2:
 	colorindex = sys.argv[1]
 else:
 	colorindex=0
-initx=7
+#initx=7
 
 
 def drawcolor(colorindex):
@@ -38,5 +38,16 @@ def drawcolor(colorindex):
 #			startx -= 1
 #			color += 1
 
+def drawblock(colorindex):
+	color=int(colorindex)
+	if color >= 0 & x <= 15:
+	if len(str(colorindex)) == 1:
+		startx=7
+		color=int(colorindex)
+		while startx > 0:
+			print('\033[00;48;5;' + str(color) + 'm   ' + str(color) + ' \033[m ')
+			
+		
 
 drawcolor(colorindex)
+drawbloc

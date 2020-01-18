@@ -24,21 +24,21 @@ function __cmap1()
 #		while [ "$xxx" -lt 8 ]; do
 			echo -en "\033[01mRegr:\033[m"
 			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-			((xxx +=1))
+			xxx=$[$xxx + 1]
 			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-			((xxx +=1))
+			xxx=$[$xxx + 1]
 			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-			((xxx +=1))
+			xxx=$[$xxx + 1]
 			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-			((xxx +=1))
+			xxx=$[$xxx + 1]
 			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-			((xxx +=1))
+			xxx=$[$xxx + 1]
 			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-			((xxx +=1))
+			xxx=$[$xxx + 1]
 			echo -en "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-			((xxx +=1))
+			xxx=$[$xxx + 1]
 			echo -e "[m "$xxx":[38;5;"$xxx"m▆▆▆▆[m "
-			((xxx +=1))
+			xxx=$[$xxx + 1]
 #			echo -e "BOLD / BRIGHT"
 #		done
 	echo -en "\033[01mBold:\033[m"
@@ -171,4 +171,4 @@ function shades_grey(){
 }
 
 cmap
-unset -f testformatting shades_grey __cmapall __cmap1 __cmap2 __cmap3h __cmap3v cmap
+#unset -f testformatting shades_grey __cmapall __cmap1 __cmap2 __cmap3h __cmap3v cmap
