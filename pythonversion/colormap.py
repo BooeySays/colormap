@@ -8,21 +8,17 @@ def cmap():
 	print('[00;01mBasic Colors: [m')
 	initcount = 0
 	count = 7
-#	print(' ' * 18 + '[00;01m[Basic: 0-7][m')
 	while count >= 0:
-#		print('[m  ' + '[' + str(len(str(initcount))) + 'D' + str(initcount) + ': [38;5;' + str(initcount) + 'm▆▆▆▆[m ',end='')
-		print('[m  ' + '[' + str(len(str(initcount))) + 'D' + str(initcount) + ':[38;5;' + str(initcount) + 'm▆▆[m ',end='')
+		print('[m  ' + '[' + str(len(str(initcount))) + 'D' + str(initcount) + ':[38;5;16;4;48;5;' + str(initcount) + 'm  [m ',end='')
 		initcount += 1
 		count -= 1
 	print('')
 	count = 7
 	while count >= 0:
-#		print('[m  ' + '[' + str(len(str(initcount))) + 'D' + str(initcount) + ': [38;5;' + str(initcount) + 'm▆▆▆▆[m ',end='')
-		print('[m  ' + '[' + str(len(str(initcount))) + 'D' + str(initcount) + ':[38;5;' + str(initcount) + 'm▆▆[m ',end='')
+		print('[m  ' + '[' + str(len(str(initcount))) + 'D' + str(initcount) + ':[38;5;16;4;48;5;' + str(initcount) + 'm  [m ',end='')
 		initcount += 1
 		count -= 1
 	print('')
-#	print(' ' * 18 + '[00;01m[Bold: 8-15][m\n')
 	print('')
 	print('[00;01mAdvanced colors: [m')
 	initcount = 16
@@ -31,8 +27,7 @@ def cmap():
 		while countb > 0:
 			count = 6
 			while count > 0:
-#				print('[m   ' + '[' + str(len(str(initcount))) + 'D' + str(initcount) + ': [38;5;' + str(initcount) + 'm▆▆▆▆[m ',end='')
-				print('[m   ' + '[' + str(len(str(initcount))) + 'D' + str(initcount) + ':[38;5;' + str(initcount) + 'm▆▆▆[m ',end='')
+				print('[m   ' + '[' + str(len(str(initcount))) + 'D' + str(initcount) + ':[38;5;16;4;48;5;' + str(initcount) + 'm   [m ',end='')
 				initcount += 1
 				count -= 1
 			countb -= 1
@@ -42,8 +37,7 @@ def cmap():
 	while initcount < 256:
 		count = 6
 		while count > 0:
-#			print('[m   ' + '[' + str(len(str(initcount))) + 'D' + str(initcount) + ': [38;5;' + str(initcount) + 'm▆▆▆▆[m ',end='')
-			print('[m   ' + '[' + str(len(str(initcount))) + 'D' + str(initcount) + ':[38;5;' + str(initcount) + 'm▆▆▆[m ',end='')
+			print('[m   ' + '[' + str(len(str(initcount))) + 'D' + str(initcount) + ':[38;5;16;4;48;5;' + str(initcount) + 'm   [m ',end='')
 			initcount += 1
 			count -= 1
 		print('')
