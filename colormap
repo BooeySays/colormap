@@ -2,6 +2,8 @@
 
 import sys, os
 
+_VERSION_ = "1.0"
+
 initcount = 0
 
 def cmap():
