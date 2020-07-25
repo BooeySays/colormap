@@ -1,0 +1,1 @@
+alias colormap="colormap | \less -er -P '[46m[38;5;16m  -- [47mHit [42m[[47mSPACE[42m][47m to advance or [41m[[47mQ[41m][47m to quit [46m--[m'"
